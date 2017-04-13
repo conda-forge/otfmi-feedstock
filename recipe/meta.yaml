@@ -11,10 +11,10 @@ source:
 
   # for testing (a release is on the way)
   git_url: https://github.com/openturns/otfmi.git
-  git_rev: a12ed79
+  git_rev: 198d704
 
 build:
-  number: 1
+  number: 2
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
