@@ -62,6 +62,7 @@ install:
     - cmd: conda.exe config --add channels conda-forge
 
     # Configure the VM.
+    - cmd: conda.exe install -n root --quiet --yes conda-build
     - cmd: conda.exe install -n root --quiet --yes conda-forge-build-setup
     - cmd: run_conda_forge_build_setup
 
