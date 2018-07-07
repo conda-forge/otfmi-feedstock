@@ -14,14 +14,15 @@ Summary: FMI models manipulation module
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/otfmi-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/otfmi-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/otfmi-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/otfmi-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/otfmi-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/otfmi-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/otfmi-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/otfmi-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/otfmi/badges/version.svg)](https://anaconda.org/conda-forge/otfmi)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/otfmi/badges/downloads.svg)](https://anaconda.org/conda-forge/otfmi)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-otfmi-green.svg)](https://anaconda.org/conda-forge/otfmi) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/otfmi.svg)](https://anaconda.org/conda-forge/otfmi) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/otfmi.svg)](https://anaconda.org/conda-forge/otfmi) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/otfmi.svg)](https://anaconda.org/conda-forge/otfmi) |
 
 Installing otfmi
 ================
