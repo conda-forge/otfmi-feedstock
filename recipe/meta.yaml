@@ -1,5 +1,4 @@
-{% set version = "0.3" %}
-
+{% set version = "0.4" %}
 
 package:
   name: otfmi
@@ -8,11 +7,11 @@ package:
 source:
   fn: otfmi-{{ version }}.tar.gz
   url: https://github.com/openturns/otfmi/archive/v{{ version }}.tar.gz
-  sha256: 0169e8b4ada95c57f6250b60849b588e9e476453b0bf76eb42e414b6f8c49918
+  sha256: 887c9de816d70b2e60508e540db504f324e3f435b50d758fc1fd0a44cfa73419
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -21,7 +20,7 @@ requirements:
     - python
   run:
     - python
-    - openturns
+    - openturns 1.15*
     - pyfmi
     - assimulo >=3.0
 
@@ -31,7 +30,8 @@ test:
 
 about:
   home: http://openturns.org/
-  license: LGPL3
+  license: LGPL-3.0-or-later
+  license_family: LGPL
   license_file: COPYING.LESSER
   summary: FMI models manipulation module
 
