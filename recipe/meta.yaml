@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - python
   run:
     - python
-    - openturns 1.15*
+    - openturns 1.16*
     - pyfmi
     - assimulo >=3.0
 
