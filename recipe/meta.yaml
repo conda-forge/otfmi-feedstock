@@ -19,10 +19,11 @@ requirements:
     - pip
     - python
   run:
-    - python >=3.6
-    - openturns 1.16*
+    - python
+    - openturns
     - pyfmi
     - assimulo >=3.0
+    - dill
 
 test:
   imports:
