@@ -1,4 +1,4 @@
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 
 package:
   name: otfmi
@@ -7,12 +7,12 @@ package:
 source:
   fn: otfmi-{{ version }}.tar.gz
   url: https://github.com/openturns/otfmi/archive/v{{ version }}.tar.gz
-  sha256: 8c5b6b745eafb100f8735e86f09a29f666154f1b6ab683c5b10f7ecc1fc3dda7
+  sha256: 95b5ceeec30870d95d9f30e63f0e9a624ec379fb3652fbba88d9a3b7065a1e38
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -20,9 +20,10 @@ requirements:
     - python
   run:
     - python >=3.6
-    - openturns 1.16*
+    - openturns
     - pyfmi
     - assimulo >=3.0
+    - dill
 
 test:
   imports:
