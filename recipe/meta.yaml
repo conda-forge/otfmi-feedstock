@@ -1,4 +1,4 @@
-{% set version = "0.13" %}
+{% set version = "0.14" %}
 
 package:
   name: otfmi
@@ -7,7 +7,7 @@ package:
 source:
   fn: otfmi-{{ version }}.tar.gz
   url: https://github.com/openturns/otfmi/archive/v{{ version }}.tar.gz
-  sha256: f5da1282db89532cb247793f683f5255b687cef408de8ea063409e89599b9bcf
+  sha256: 26610005f078a2e1090515ac61e0b2dc472bcbd37ca9502856a225cd02c6b0bb
 
 build:
   noarch: python
