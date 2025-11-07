@@ -1,5 +1,5 @@
 diff --git a/setup.py b/setup.py
-index 6bd490b..4be9f67 100644
+index 6bd490b..f71b021 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -56,7 +56,7 @@ setup(
@@ -11,3 +11,15 @@ index 6bd490b..4be9f67 100644
  
      # List run-time dependencies here.  These will be installed by pip when
      # your project is installed. For an analysis of "install_requires" vs pip's
+@@ -81,9 +81,8 @@ setup(
+     # installed, specify them here.  If using Python 2.6 or less, then these
+     # have to be included in MANIFEST.in as well.
+     package_data={
+-        "otfmi": ["example/file/initialization_script/*.mos",
+-                  "example/file/fmu/linux64/*.fmu",
+-                  "example/file/fmu/win64/*.fmu"]
++        "otfmi": ["example/file/fmu/linux-x86_64/*.fmu",
++                  "example/file/fmu/win-amd64/*.fmu"]
+     },
+ 
+     # Although 'package_data' is the preferred approach, in some case you may
