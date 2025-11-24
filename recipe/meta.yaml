@@ -8,8 +8,6 @@ source:
   fn: otfmi-{{ version }}.tar.gz
   url: https://github.com/openturns/otfmi/archive/v{{ version }}.tar.gz
   sha256: f350f47aafde8567ca471d6f0f4a082860fe2b2d613d2fee3776803429385c23
-  patches:
-    - example.patch
 
 build:
   noarch: python
