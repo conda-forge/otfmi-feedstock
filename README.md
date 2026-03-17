@@ -9,6 +9,10 @@ Package license: LGPL-3.0-or-later
 
 Summary: FMI models manipulation module
 
+Development: https://github.com/openturns/otfmi
+
+Documentation: https://openturns.github.io/otfmi/master/
+
 Current build status
 ====================
 
