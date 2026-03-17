@@ -1,0 +1,49 @@
+context:
+  version: "0.17.1"
+
+package:
+  name: otfmi
+  version: ${{ version }}
+
+source:
+  url: https://github.com/openturns/otfmi/archive/v${{ version }}.tar.gz
+  sha256: edfcdc7b6fe5f280e8621c0a0c6732c9b980cf9d970e7f4975fcdb345bd8d225
+
+build:
+  noarch: python
+  number: 0
+  script: pip install . --no-deps -vv
+
+requirements:
+  host:
+    - pip
+    - setuptools
+    - python ${{ python_min }}.*
+  run:
+    - python >=${{ python_min }}
+    - openturns
+    - pyfmi
+    - assimulo
+    - pythonfmu
+    - jinja2
+    - dill
+
+    
+tests:
+  - python:
+      imports:
+        - otfmi
+      python_version: ${{ python_min }}.*
+
+about:
+  homepage: http://openturns.org/
+  license: LGPL-3.0-or-later
+  license_family: LGPL
+  license_file: COPYING.LESSER
+  summary: FMI models manipulation module
+  documentation: https://openturns.github.io/otfmi/master/
+  repository: https://github.com/openturns/otfmi
+
+extra:
+  recipe-maintainers:
+    - jschueller
