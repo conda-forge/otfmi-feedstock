@@ -1,5 +1,5 @@
 context:
-  version: "0.18.1"
+  version: "0.18.2"
 
 package:
   name: otfmi
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openturns/otfmi/archive/v${{ version }}.tar.gz
-  sha256: df2008c1df1d4baef0177228fe485a16a250ab87a85e4af62b72b2813b81ace7
+  sha256: 37d6ff85a8ece784ee1b064be5c37705631ba049624c930facd4fe533474c137
 
 build:
   noarch: python
